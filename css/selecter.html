@@ -2,11 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <style media="screen">
-    #target~li{
+    #menu>ul>li:nth-child(even){
       border:1px #f00 solid;
     }
-
-
+    a:link{color:#000}
+    a:visited{color:red}
+    a:active{color:green}
+    a:hover{color:#ff0}
+    .name:after{
+      content:"병신"
+    }
+  input[type="text"](color:red)
+  a[href^="http://"]{
+      color:red
+  }
 
     </style>
     <meta charset="utf-8">
@@ -17,7 +26,7 @@
       <ul>
         <li>menu item01
         <ul>
-        <li>menu item01</li>
+        <li><a href="http://www.naver.com">"hello warld</a></li>
         <li class="sub on">menu item02</li>
         <li>menu item03</li>
         <li class="sub">menu item04</li>
@@ -25,10 +34,10 @@
         </ul>
         </li>
 
-        <li id="target"><input type="button" name="" value="hello ward"></li>
+        <li id="target"><input type="button" name="" value="hello warld"></li>
           <li><<input type="text" name="" value="this is form"></li>
             <li><<input type="text" name="" value="this is form"></li>
-            <li>menu item05</li>
+            <li><span class="name">김승훈</li>
       </ul>
     </div>
   </body>
